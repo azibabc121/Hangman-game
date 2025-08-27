@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="hangman.css">
+    <title>Hangman Game </title>
+</head>
+<body>
+    <div class="main">
+    <div class="container">
+        <h1>HANGMAN GAME</h1>
+        <div id="option-container" >
+            <button class="option" id="fruits">Fruits</button>
+            <button class="option" id="Animals">Animals</button>
+            <button class="option" id="countries">Countries</button>
+
+        </div>
+
+
+        <div id="letter-container"
+         class="letter-container hide">
+        </div>
+
+
+        <div id="user-input-section"></div>
+
+        <canvas id="canvas"></canvas>
+
+        <div id="new-game-container"
+         class="newgame-popup hide "></div>
+
+
+
+
+         
+    </div>
+    <div class="new-game-container" >
+    <div id="result-text"></div>
+    <div id="new-game-button"><button>START AGAIN</button></div>
+</div>
+    
+</div>
+
+    <script src="hangman.js"></script>
+</body>
+</html>
