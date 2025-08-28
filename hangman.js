@@ -34,30 +34,30 @@ function startgame(category) {
     GenerateLetterbuttons();
 }
 
-// function GenerateLetterbuttons() {
-//     lettercontainer.innerHTML = '';
-//     for (let i = 65; i <= 90; i++) {
-//         let button = document.createElement('button');
-//         button.innerHTML = String.fromCharCode(i);
-//         button.classList.add('letter');
-//         button.addEventListener('click', handleLetterClick);
-//         lettercontainer.appendChild(button);
-//     }
-// }
+function GenerateLetterbuttons() {
+    lettercontainer.innerHTML = '';
+    for (let i = 65; i <= 90; i++) {
+        let button = document.createElement('button');
+        button.innerHTML = String.fromCharCode(i);
+        button.classList.add('letter');
+        button.addEventListener('click', handleLetterClick);
+        lettercontainer.appendChild(button);
+    }
+}
 
-// function handleLetterClick(event) {
-//     const letter = event.target.innerHTML;
-//     event.target.disabled = true;
+function handleLetterClick(event) {
+    const letter = event.target.innerHTML;
+    event.target.disabled = true;
 
-//     if (selectedword.includes(letter)) {
-//         UpdateGuessWord(letter);
-//     } else {
-//         remainingguesses--;
-//         drawhangman();
-//     }
+    if (selectedword.includes(letter)) {
+        UpdateGuessWord(letter);
+    } else {
+        remainingguesses--;
+        drawhangman();
+    }
 
-//     CheckWinprLoss();
-// }
+    CheckWinprLoss();
+}
 
 // function UpdateGuessWord(letter) {
 //     let GuessWord = '';
