@@ -126,47 +126,47 @@ function drawpole() {
     context.stroke();
 }
 
-// function drawhead() {
-//     context.beginPath();
-//     context.arc(150, 70, 15, 0, Math.PI * 2);
-//     context.stroke();
-// }
+function drawhead() {
+    context.beginPath();
+    context.arc(150, 70, 15, 0, Math.PI * 2);
+    context.stroke();
+}
 
-// function drawbody() {
-//     context.beginPath();
-//     context.moveTo(150, 85);
-//     context.lineTo(150, 120);
-//     context.stroke();
-// }
+function drawbody() {
+    context.beginPath();
+    context.moveTo(150, 85);
+    context.lineTo(150, 120);
+    context.stroke();
+}
 
-// function drawleftarm() {
-//     context.beginPath();
-//     context.moveTo(150, 95);
-//     context.lineTo(130, 115);
-//     context.stroke();
-// }
+function drawleftarm() {
+    context.beginPath();
+    context.moveTo(150, 95);
+    context.lineTo(130, 115);
+    context.stroke();
+}
 
-// function drawrightarm() {
-//     context.beginPath();
-//     context.moveTo(150, 95);
-//     context.lineTo(170, 115);
-//     context.stroke();
-// }
+function drawrightarm() {
+    context.beginPath();
+    context.moveTo(150, 95);
+    context.lineTo(170, 115);
+    context.stroke();
+}
 
-// function drawleftleg() {
-//     context.beginPath();
-//     context.moveTo(150, 120);
-//     context.lineTo(130, 160);
-//     context.stroke();
-// }
+function drawleftleg() {
+    context.beginPath();
+    context.moveTo(150, 120);
+    context.lineTo(130, 160);
+    context.stroke();
+}
 
-// function drawrightleg() {
-//     context.beginPath();
-//     context.moveTo(150, 120);
-//     context.lineTo(170, 160);
-//     context.stroke();
-// }
+function drawrightleg() {
+    context.beginPath();
+    context.moveTo(150, 120);
+    context.lineTo(170, 160);
+    context.stroke();
+}
 
-// newgamebutton.addEventListener("click", function () {
-//     window.location.reload();
-// });
+newgamebutton.addEventListener("click", function () {
+    window.location.reload();
+});
