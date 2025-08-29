@@ -69,62 +69,62 @@ function UpdateGuessWord(letter) {
         }
     }
 
-//     underscores = GuessWord;
-//     userinput.innerHTML = underscores.split('').join(' ');
-// }
+    underscores = GuessWord;
+    userinput.innerHTML = underscores.split('').join(' ');
+}
 
-// function CheckWinprLoss() {
-//     if (selectedword === underscores) {
-//         resulttext.innerHTML = "🎉 YOU WIN!!";
-//         end();
-//     } else if (remainingguesses <= 0) {
-//         resulttext.innerHTML = `❌ YOU LOSE. The word was: ${selectedword}`;
-//         end();
-//     }
-// }
+function CheckWinprLoss() {
+    if (selectedword === underscores) {
+        resulttext.innerHTML = "🎉 YOU WIN!!";
+        end();
+    } else if (remainingguesses <= 0) {
+        resulttext.innerHTML = `❌ YOU LOSE. The word was: ${selectedword}`;
+        end();
+    }
+}
 
-// function end() {
-//     container.style.display = 'none';
-//     newgamecontainer.style.display = 'block';
-// }
+function end() {
+    container.style.display = 'none';
+    newgamecontainer.style.display = 'block';
+}
 
-// let options = {
-//     fruits: ["Apple", "Blueberry", "Mandarin", "Pineapple", "Pomegranate", "Watermelon"],
-//     Animals: ["Hedgehog", "Rhinoceros", "Squirrel", "Panther", "Walrus", "Zebra"],
-//     countries: ["Pakistan", "India", "America", "Zimbabwe", "Dominica", "Hungary", "Switzerland"]
-// };
+let options = {
+    fruits: ["Apple", "Blueberry", "Mandarin", "Pineapple", "Pomegranate", "Watermelon"],
+    Animals: ["Hedgehog", "Rhinoceros", "Squirrel", "Panther", "Walrus", "Zebra"],
+    countries: ["Pakistan", "India", "America", "Zimbabwe", "Dominica", "Hungary", "Switzerland"]
+};
 
-// function drawhangman() {
-//     switch (remainingguesses) {
-//         case 5: drawbase(); break;
-//         case 4: drawpole(); break;
-//         case 3: drawhead(); break;
-//         case 2: drawbody(); break;
-//         case 1: drawleftarm(); break;
-//         case 0:
-//             drawrightarm();
-//             drawleftleg();
-//             drawrightleg();
-//             break;
-//     }
-// }
+function drawhangman() {
+    switch (remainingguesses) {
+        case 5: drawbase(); break;
+        case 4: drawpole(); break;
+        case 3: drawhead(); break;
+        case 2: drawbody(); break;
+        case 1: drawleftarm(); break;
+        case 0:
+            drawrightarm();
+            drawleftleg();
+            drawrightleg();
+            break;
+    }
+}
 
-// // Hangman drawing functions
-// function drawbase() {
-//     context.beginPath();
-//     context.moveTo(10, 180);
-//     context.lineTo(180, 180);
-//     context.stroke();
-// }
+// Hangman drawing functions
+function drawbase() {
+    context.beginPath();
+    context.moveTo(10, 180);
+    context.lineTo(180, 180);
+    context.stroke();
+}
 
-// function drawpole() {
-//     context.beginPath();
-//     context.moveTo(80, 180);
-//     context.lineTo(80, 30);
-//     context.lineTo(150, 30);
-//     context.lineTo(150, 50);
-//     context.stroke();
-// }
+function drawpole() {
+    context.beginPath();
+    context.moveTo(80, 180);
+    context.lineTo(80, 30);
+    context.lineTo(150, 30);
+    context.lineTo(150, 50);
+    context.stroke();
+}
 
 // function drawhead() {
 //     context.beginPath();
