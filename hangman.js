@@ -59,15 +59,15 @@ function handleLetterClick(event) {
     CheckWinprLoss();
 }
 
-// function UpdateGuessWord(letter) {
-//     let GuessWord = '';
-//     for (let i = 0; i < selectedword.length; i++) {
-//         if (selectedword[i] === letter) {
-//             GuessWord += letter;
-//         } else {
-//             GuessWord += underscores[i];
-//         }
-//     }
+function UpdateGuessWord(letter) {
+    let GuessWord = '';
+    for (let i = 0; i < selectedword.length; i++) {
+        if (selectedword[i] === letter) {
+            GuessWord += letter;
+        } else {
+            GuessWord += underscores[i];
+        }
+    }
 
 //     underscores = GuessWord;
 //     userinput.innerHTML = underscores.split('').join(' ');
